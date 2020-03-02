@@ -347,6 +347,7 @@ and loading the `dplyr` packages for the analysis in our notebook
     ```
 
 ```{r load-packages, message=FALSE}
+library("readr")
 library("dplyr")
 ```
 
@@ -367,7 +368,6 @@ file.exists(gapminder_path)
 Assuming the file can be found, we can use `read_csv` to import. Other functions can be used to read tab-delimited files (`read_delim`) or a generic `read.table` function. A data frame object is created.
 
 ```{r}
-library(readr)
 gapminder <- read_csv(gapminder_path)
 ```
 
